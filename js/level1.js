@@ -39,6 +39,7 @@
 
 // TODO: Now try to create an alert with any phrase you like.
 
+//alert("Hello World!, Remember me?");//
 
 
 
@@ -50,7 +51,7 @@
 // TODO: Shall we try to console.log the message to the browser?
 // Send any message you like.
 
-
+console.log ('Hello, World! Rainie is back!');
 
 
 
@@ -85,7 +86,8 @@
 
 // TODO: Now create two empty variables named numberOne and numberTwo.
 
-
+var numberOne
+var numberTwo 
 
 
 /*
@@ -101,6 +103,13 @@
 
 // TODO: Create 2 variables, 1 with your name and the 2nd with your age and display
 // them with an alert pop-up box.
+
+var numberOne = 'Hello, World! Rainie is back';
+var numberTwo = "It's Rainie and I'm back";
+var numberThree = 'Back to be better!' 
+//alert(numberOne);
+//alert(numberTwo);
+//alert(numberThree);
 
 
 
@@ -136,7 +145,10 @@
 // 1st variable multiplied by the 2nd variable. And in the end display the
 // value of multipleOfNumbers.
 
-
+var ten = 10
+var three = 3
+var multipleOfNumbers = ten + three;
+//alert (multipleOfNumbers);
 
 
 
@@ -175,8 +187,10 @@
 // Step 3 - Call the function passing numbers 2 and 3 as arguments.
 // - To see the result you can console.log it.
 
-
-
+function add(num1,num2){
+    return num1+num2
+}
+ console.log (add(10,20));
 
 
 
@@ -187,8 +201,10 @@
 // PS: Do you know that instead of numbers you can create variables that store
 // those numbers and pass them as an arguments to your function? Try it out!
 
-
-
+function subtract(num1,num2){
+    return num1-num2
+}
+console.log (subtract(5,1));
 
 
 
@@ -248,6 +264,13 @@
 //
 // Don't forget to console.log it to see the result.
 
+var operator = '+'
+if (operator == '+' ){
+    console.log ('Our operator is +')
+    console.log (add (10,5));
+} else {
+    console.log ('Our operator is not +')
+}
 
 
 
@@ -293,8 +316,31 @@
 // it is equal to '/' - call 'divide' function, if it is '*' call multiply
 // function, else console.log - "Sorry, we don't know this operator".
 
+function divide (num1,num2){
+    return (num1/num2);
+} 
 
+function multiply (num1,num2){
+    return (num1*num2);
+}
 
+var op = 'p'
+
+if (op == '+'){
+    console.log ("Let's call Add");
+    console.log (add (1,2));
+} else if ( op == '-'){
+    console.log ('Meet the Minus');
+    console. log (subtract (3,4));
+} else if ( op == '*'){
+    console.log ("This is Multiply");
+    console.log (multiply (5,6));
+} else if ( op == '/'){
+    console.log ("It's Divide");
+    console.log (divide (7,8));
+} else {
+    console.log ("Sorry, we don't know this operator")
+}
 
 
 

@@ -42,7 +42,10 @@
 // TODO: Create your own array, named favouriteFood, and write in a couple of
 // things you like.
 
-
+var colour = ['Pink','Navy','Gold'];
+var animals = ['Dog','Flamingo','Penguin'];
+var vegetable = ['Chilli','Broccoli','Carrot'];
+var favoritefood = ['TomYum','PadThai','LardNa'];  
 
 
 
@@ -61,8 +64,8 @@
 // TODO: Check how many values you have in your array favouriteFood.
 // console.log the result.
 
-
-
+console.log (favoritefood.length);
+console.log (colour.length);
 
 
 
@@ -87,7 +90,7 @@
 
 // TODO: Get third element from your array favouriteFood and console.log it.
 
-
+console.log (favoritefood[2]);
 
 
 
@@ -115,7 +118,8 @@
 // console.log the whole array to check.
 // Don't forget, index positions start from 0!
 
-
+favoritefood[2] = 'NamPrik';
+console.log (favoritefood);
 
 
 
@@ -138,6 +142,9 @@
 
 // TODO: Let's extend your list of favouriteFood and add one more value to it.
 // console.log list your favouriteFood and check it.
+
+favoritefood.push('Sai-Uah');
+console.log(favoritefood);
 
 
 
@@ -196,6 +203,11 @@
 // TODO: Using a 'while loop', tell your computer to log the numbers from
 // ten to one.
 
+var number = 10
+while (number > 0){
+    console.log (number);
+    number = number - 1;
+}
 
 
 
@@ -220,7 +232,10 @@
 
 // TODO: Log every 3rd number from three to 22 using a 'for loop'.
 
-
+var i;
+for (i=0; i<=200; i=i+3){
+    console.log ('Purr' + i);
+}
 
 
 
@@ -248,7 +263,9 @@
 
 // TODO: Try it out with your favouriteFood array.
 
-
+ for (var i=0; i < favoritefood.length; i++){
+     console.log('I love ' + favoritefood[i]);
+ }
 
 
 
@@ -277,7 +294,16 @@
             console.log(i);
         }
     }
+
 */
+
+for (var i = 10; i >= 0; i = i - 1) {
+    if (i === 5) {
+        console.log('WooHoo, we are in the middle!');
+    } else {
+        console.log(i);
+    }
+}
 
 // TODO: Time has come for a classic exercise — 'FizzBuzz'.
 
@@ -295,7 +321,17 @@
 // 16 % 4 = 0 — in 16 we have 4*4
 // 19 % 4 = 3 — in 19 we have 4*4 + 3 etc
 
-
+for (var i = 1; i <= 50; i = i + 1) {
+    if (i % 3 == 0 && i % 5 == 0 ){
+        console.log ('FizzBuzz')
+    } else if  (i % 3 == 0) {
+        console.log('Fizz');
+    } else if (i % 5 == 0){
+        console.log('Buzz');
+    } else {
+        console.log(i);
+    }
+}
 
 
 

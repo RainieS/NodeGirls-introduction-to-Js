@@ -115,8 +115,8 @@
 // variable named ourTitle.
 // console.log it and see what you get!
 
-
-
+var ourTwitter = document.querySelector('h1');
+console.log (ourTwitter);
 
 
 
@@ -141,18 +141,21 @@
 
 // TODO: Get all <li> elements from the page in a variable named mediaLinks.
 
-
+var mediaLinks = document.querySelectorAll('li');
+console.log (mediaLinks);
 
 
 // TODO: Now console.log mediaLinks.length
 
-
+console.log (mediaLinks.length);
 
 
 // TODO: Do you remember loops from level 2? Using this knowledge, iterate
 // through each mediaLinks item and console.log it.
 
-
+for (i=0; i < mediaLinks.length; i++){
+    console.log (mediaLinks[i].textContent);
+}
 
 
 
@@ -173,6 +176,8 @@
 
 // TODO: Get the content of 'h1' element and console.log it.
 
+var myheading = document.querySelector('h1');
+console.log (myheading.textContent);
 
 
 
@@ -199,6 +204,8 @@
 // TODO: Make up a new title! Change the content of our 'h1' to anything you
 // like.
 
+ourTwitter.textContent = 'Welcome Back Rainie!';
+    console.log(ourTwitter.textContent);
 
 
 
@@ -219,7 +226,8 @@
 // TODO: Update the value of the 'src' attribute of our img tag to
 // "img/kittens.jpeg"
 
-
+var Myimage = document.querySelector('img');
+    Myimage.src = "img/kittens.jpeg";
 
 
 
@@ -244,7 +252,8 @@
 // TODO: Get any element on the page and change some styles for it.
 
 
-
+var ourFacebook = document.querySelector('.facebook');
+    ourFacebook.style.backgroundColor = 'Pink';
 
 
 
@@ -275,7 +284,10 @@
 //
 // P.S. You also can give styles to the new node that you create.
 
-
+var pageNode = document.querySelector('header');
+    var newimage = document.createElement('img');
+    newimage.src = "img/logo.png";
+    pageNode.appendChild(newimage);
 
 
 
